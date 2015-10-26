@@ -33,6 +33,8 @@ Outgoing messages should look like following:
 
 1. Setup laravel job processor using artisan commands such as queue:listen or queue:work, see more at http://laravel.com/docs/5.1/queues.
 2. Activate interest queue listener from console using artisan command interest-queue:listen
+
+#### NB
 * If you are using default laravel sync job queue driver this step 1 is not required
 
 ### Author
