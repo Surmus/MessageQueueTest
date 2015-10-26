@@ -35,7 +35,7 @@ Outgoing messages should look like following:
 2. Activate interest queue listener from console using artisan command interest-queue:listen
 
 #### NB
-* If you are using default laravel sync job queue driver this step 1 is not required
+* If you are using default laravel sync job queue driver step 1 is not required
 
 ### Author
 
