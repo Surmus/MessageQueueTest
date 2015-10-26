@@ -9,6 +9,8 @@ Message queue processor
 3. For each message it calculates the "interest" and total sum by formula given below
 4. Broadcast the new messages to 'solved-interest-queue' in the same exchange
 
+When a message is received from the interest-queue new Laravel job is created and dispatched, the Job will process the message and then push it back to the interest-solved-queue
+
 ### Message Format
 Messages are transmitted as JSON.
 Incoming messages will look like following:{ sum: 123, days: 5 }
@@ -26,6 +28,12 @@ Outgoing messages should look like following:
 
 1. Run composer to get application dependencies
 2. setup into root filed .env file, use .env.example as template
+
+### Running
+
+1. Setup laravel job processor using artisan commands such as queue:listen or queue:work, see more at http://laravel.com/docs/5.1/queues.
+* If you are using default laravel sync job queue driver this step is not required
+2. Activate interest queue listener from console using artisan command interest-queue:listen
 
 ### Author
 
