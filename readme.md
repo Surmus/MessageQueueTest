@@ -1,4 +1,4 @@
-## MyJar message queue test app
+## Message queue test app
 
 Message queue processor
 
